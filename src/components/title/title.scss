@@ -1,0 +1,32 @@
+@import '../../styles/main.scss';
+
+.title {}
+
+.subtitle {
+   font-family: 'Cormorant Upright';
+   font-weight: 700;
+   @include adaptiveValue('font-size', 23, 16, 1);
+   line-height: 130%;
+   letter-spacing: 0.04em;
+   text-transform: capitalize;
+   color: #FFFFFF;
+   margin-bottom: 8px;
+   font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+img {
+   width: 40px;
+   height: 9px;
+}
+
+.big-title {
+   font-family: 'Cormorant Upright';
+   font-weight: 600;
+   margin-top: 8px;
+   @include adaptiveValue('font-size', 64, 36, 1);
+   line-height: 130%;
+   letter-spacing: 0.03em;
+   text-transform: capitalize;
+   font-feature-settings: 'tnum' on, 'lnum' on;
+   color: #DCCA87;
+}
